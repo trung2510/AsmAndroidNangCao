@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lnl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="STT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:text="MÃ LỚP"
+            android:paddingLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+        <TextView
+            android:text="TÊN LỚP"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_below="@+id/lnl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+
+
+
+</RelativeLayout>

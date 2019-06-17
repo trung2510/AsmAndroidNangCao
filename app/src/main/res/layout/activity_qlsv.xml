@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.QLSVActivity">
+
+    <Button
+        android:textColor="#FF0000"
+        android:id="@+id/btn_addClass"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Thêm Lớp"/>
+
+    <Button
+        android:textColor="#FFF200"
+        android:id="@+id/btn_viewlist_class"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Xem Danh Sách lớp"
+        android:layout_below="@+id/btn_addClass"
+        />
+
+    <Button
+        android:textColor="#FF4E22"
+        android:id="@+id/btn_QLSV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quản lý sinh viên"
+        android:layout_below="@+id/btn_viewlist_class"/>
+
+</LinearLayout>

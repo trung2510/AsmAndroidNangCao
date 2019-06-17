@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_malop"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:text="LỚP: "/>
+
+    <Spinner
+        android:id="@+id/spn_class"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/tv_malop"
+        android:layout_toEndOf="@+id/tv_malop"
+        android:gravity="center"
+        android:text="_ Show All _" />
+
+    <TextView
+        android:layout_below="@+id/tv_malop"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_tensv"
+        android:text="TÊN SV: "/>
+
+    <EditText
+        android:id="@+id/edt_student_tensv"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_malop"
+        android:layout_marginLeft="102dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_below="@+id/tv_tensv"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:text="NGÀY SINH: "/>
+
+    <EditText
+        android:id="@+id/edt_student_ngaysinh"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tensv"
+        android:layout_toEndOf="@+id/tv_tensv" />
+
+    <Button
+        android:layout_below="@+id/edt_student_ngaysinh"
+        android:id="@+id/btn_student_themsv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="Thêm sinh viên"/>
+
+    <TextView
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_student_themsv"
+        android:text="STT"
+        android:textColor="@color/orange"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_student_themsv"
+        android:layout_marginStart="76dp"
+        android:text="TÊN SV"
+        android:textColor="@color/orange"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_birhday"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_student_themsv"
+        android:layout_marginStart="186dp"
+        android:text="NGÀY SINH"
+        android:paddingLeft="20dp"
+        android:textColor="@color/orange"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/lv_student_listview"
+        android:layout_below="@+id/tv_birhday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    
+</RelativeLayout>

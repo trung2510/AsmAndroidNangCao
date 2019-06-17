@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment Android Nâng Cao</string>
+    <string name="title_home">Course</string>
+    <string name="title_dashboard">Maps</string>
+    <string name="title_notifications">News</string>
+    <string name="title_social">Social</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id">2216631291939168</string>
+</resources>
